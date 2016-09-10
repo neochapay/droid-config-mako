@@ -50,6 +50,9 @@ Requires:
 - gstreamer0.10-droidcamsrc
 - gstreamer0.10-droideglsink
 
+# Flashlight
+- jolla-settings-system-flashlight
+
 # This is needed for notification LEDs
 - mce-plugin-libhybris
 
