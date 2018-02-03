@@ -19,5 +19,5 @@ fi
 
 echo "Ready to load wlan after $i s wait"
 
-modprobe wlan
+echo sta > /sys/module/wlan/parameters/fwpath
 
