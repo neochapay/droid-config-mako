@@ -44,8 +44,14 @@ Requires:
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
 - nemo-gstreamer1.0-interfaces
-# For devices with droidmedia and gst-droid built, see HADK pdf for more information
-#- gstreamer1.0-droid
+- gstreamer1.0-droid
+
+# This is needed for some harbour apps (eg. Falldown doesn't work otherwise)
+- qt5-qtdeclarative-import-positioning
+- qt5-qtdeclarative-import-sensors
+
+# Flashlight
+- jolla-settings-system-flashlight
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
@@ -62,7 +68,10 @@ Requires:
 # working but careful with roaming!
 - usb-moded-connection-sharing-android-config
 # android diag mode only usable for certain android tools
-#- usb-moded-diag-mode-android
+- usb-moded-diag-mode-android
+
+# OBEX for bluetooth PBAP
+- obexd-calldata-provider
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill
